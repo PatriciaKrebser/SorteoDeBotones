@@ -20,6 +20,76 @@
             </div>
         </div>
     </div>
+    <div class="sea-background">
+        <!-- Nubes o estrellas en el fondo (gestionado por CSS) -->
+        
+        <!-- Barco Pirata del Fondo (más pequeño y lento) -->
+        <div class="ship ship-back">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Casco -->
+                <path d="M15,50 L85,50 L75,65 L25,65 Z" fill="#3a220d"/>
+                <path d="M15,50 L25,40 L35,40 L30,50 Z" fill="#241508"/>
+                <path d="M75,50 L85,42 L80,42 L75,50 Z" fill="#241508"/>
+                <circle cx="35" cy="57" r="1.5" fill="#d4af37"/>
+                <circle cx="50" cy="57" r="1.5" fill="#d4af37"/>
+                <circle cx="65" cy="57" r="1.5" fill="#d4af37"/>
+                <!-- Mástil Central y Vela con Calavera -->
+                <rect x="48.5" y="10" width="3" height="40" fill="#211308"/>
+                <path d="M50,12 C32,22 32,38 50,42 C68,38 68,22 50,12 Z" fill="#e2e8f0"/>
+                <circle cx="50" cy="24" r="3" fill="#1e293b"/>
+                <rect x="48.5" y="27" width="3" height="2" rx="0.5" fill="#1e293b"/>
+                <path d="M46,21 L54,29 M54,21 L46,29" stroke="#1e293b" stroke-width="0.8"/>
+                <!-- Mástil Proa y Popa -->
+                <rect x="29" y="20" width="2" height="30" fill="#211308"/>
+                <path d="M30,22 C18,30 18,42 30,45 C42,42 42,30 30,22 Z" fill="#cbd5e1"/>
+                <rect x="69" y="22" width="2" height="28" fill="#211308"/>
+                <path d="M70,24 C60,30 60,42 70,44 C80,42 80,30 70,24 Z" fill="#cbd5e1"/>
+                <!-- Bandera -->
+                <path d="M50,5 L43,7 L50,9 Z" fill="#1e293b"/>
+            </svg>
+        </div>
+
+        <!-- Ola del fondo (Movimiento lento) -->
+        <svg class="wave wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C320,90 420,10 640,40 C860,70 1120,20 1440,60 L1440,120 L0,120 Z" />
+        </svg>
+
+        <!-- Barco Pirata del Frente (más grande y rápido) -->
+        <div class="ship ship-front">
+            <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Casco -->
+                <path d="M15,50 L85,50 L75,65 L25,65 Z" fill="#4a2c11"/>
+                <path d="M15,50 L25,40 L35,40 L30,50 Z" fill="#321e0b"/>
+                <path d="M75,50 L85,42 L80,42 L75,50 Z" fill="#321e0b"/>
+                <circle cx="35" cy="57" r="2" fill="#e5c158"/>
+                <circle cx="50" cy="57" r="2" fill="#e5c158"/>
+                <circle cx="65" cy="57" r="2" fill="#e5c158"/>
+                <!-- Mástil Central y Vela con Calavera -->
+                <rect x="48.5" y="10" width="3" height="40" fill="#2d1a0a"/>
+                <path d="M50,12 C30,22 30,38 50,42 C70,38 70,22 50,12 Z" fill="#f8fafc"/>
+                <circle cx="50" cy="24" r="3" fill="#0f172a"/>
+                <rect x="48.5" y="27" width="3" height="2" rx="0.5" fill="#0f172a"/>
+                <path d="M46,21 L54,29 M54,21 L46,29" stroke="#0f172a" stroke-width="0.8"/>
+                <!-- Mástil Proa y Popa -->
+                <rect x="29" y="20" width="2" height="30" fill="#2d1a0a"/>
+                <path d="M30,22 C15,30 15,42 30,45 C45,42 45,30 30,22 Z" fill="#e2e8f0"/>
+                <rect x="69" y="22" width="2" height="28" fill="#2d1a0a"/>
+                <path d="M70,24 C57,30 57,42 70,44 C83,42 83,30 70,24 Z" fill="#e2e8f0"/>
+                <!-- Bandera -->
+                <path d="M50,5 L41,7 L50,9 Z" fill="#0f172a"/>
+            </svg>
+        </div>
+
+        <!-- Ola del medio (Movimiento intermedio) -->
+        <svg class="wave wave-middle" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,50 C280,10 480,80 760,40 C1040,0 1200,60 1440,30 L1440,120 L0,120 Z" />
+        </svg>
+
+        <!-- Ola del frente (Movimiento rápido) -->
+        <svg class="wave wave-front" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C360,20 680,80 1020,40 C1260,10 1360,50 1440,30 L1440,120 L0,120 Z" />
+        </svg>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
